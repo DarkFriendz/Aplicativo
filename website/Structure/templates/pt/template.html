@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/template.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/icons.css') }}">
+        <title>{% block title %}Template{% endblock %}</title>
+    </head>
+    <body>
+        <header>
+            <ul id="menu">
+                <li id="logo">Company Cards <i class="gg-card-diamonds"></i></li>
+                {% block menu %}
+
+                {% endblock %}
+                <li id="language" onclick="events('1')"><i class="gg-globe-alt"></i></li>
+                <li id="theme" onclick="events('2')"><i class="gg-sun"></i></li>
+                <li id="user" onclick="events('3')"><i class="gg-user"></i></li>
+                <div id="balloon3">
+                    <ul id="balloon">
+                        <li><a href="/pt/login">Login<i class="gg-user2"></i></a></li>
+                        <li><a href="/pt/register">Register<i class="gg-user-add"></i></a></li>
+                    </ul>
+                </div>
+            </ul>
+        </header>
+        <br/><br/><br/><br/>
+        {% block body %}
+
+        {% endblock %}
+        <script src="{{ url_for('static', filename='js/template.js' )}}"></script>
+    </body>
+</html>

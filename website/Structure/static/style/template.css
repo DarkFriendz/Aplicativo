@@ -1,0 +1,174 @@
+body {
+    margin: 0px;
+    background-color: rgb(200, 200, 200);
+    color: rgb(150, 0, 180)
+}
+
+/* Menu */
+
+body header {
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    background-color: rgb(150, 0, 180);
+    box-shadow: 
+        rgba(0, 0, 0, 0.3) 0px 2px, 
+        rgba(0, 0, 0, 0.2) 0px 4px, 
+        rgba(0, 0, 0, 0.1) 0px 8px, 
+        rgba(0, 0, 0, 0.05) 0px 12px;
+}
+
+body header ul#menu {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+
+body header ul#menu li {
+    height: 37px;
+    padding: 13px 15px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
+body header ul#menu li:hover {
+    color: rgb(200, 200, 200);
+    background-color: rgb(130, 0, 160);
+    cursor: pointer;
+}
+
+body header ul#menu li#meio {
+    border-left: solid rgb(200, 200, 200) 2px;
+    border-right: solid rgb(200, 200, 200) 2px;
+}
+
+body header ul#menu li#fim {
+    border-right: solid rgb(200, 200, 200) 2px;
+}
+
+body header ul#menu li#logo {
+    height: 40px;
+    margin: 0px;
+    padding: 10px 15px;
+    padding-bottom: 0px;
+    font-size: 21px;
+    color: rgb(150, 0, 180);
+    background-color: rgb(255, 255, 255);
+}
+
+body header ul#menu li#logo:hover {
+    cursor: default;
+}
+
+body header ul#menu li#language {
+    width: 50px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    border-left: solid rgb(200, 200, 200) 2px;
+    right: 102px;
+}
+
+body header ul#menu li#language:hover {
+    color: rgb(200, 200, 200);
+    background-color: rgb(130, 0, 160);
+}
+
+body header ul#menu li#theme {
+    width: 50px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    border-left: solid rgb(200, 200, 200) 2px;
+    border-right: solid rgb(200, 200, 200) 2px;
+    right: 50px;
+}
+
+body header ul#menu li#theme:hover {
+    color: rgb(200, 200, 200);
+    background-color: rgb(130, 0, 160);
+}
+
+body header ul#menu li#user {
+    width: 50px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+body header ul#menu li#user:hover {
+    color: rgb(200, 200, 200);
+    background-color: rgb(130, 0, 160);
+}
+
+body header div#balloon3 {
+    width: 200px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(150, 0, 180) 2px;
+    top: 53px;
+    right: 5px;
+    display: none; 
+}
+
+
+
+body header div#balloon3::before {
+    content: "";
+    border-top: solid rgb(150, 0, 180) 2px;
+    border-left: solid rgb(150, 0, 180) 2px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: currentColor;
+    transform: rotate(45deg);
+    top: -6px;
+    right: 13px;
+}
+
+body header div#balloon3 ul {
+    list-style: None;
+    padding: 0px;
+}
+
+body header div#balloon3 ul li {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+body header div#balloon3 ul li:hover {
+    background-color: rgb(255, 255, 255);
+
+}
+
+body header div#balloon3 ul li a {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(150, 0, 180);
+    text-decoration: None;
+}
+
+body header div#balloon3 ul li a:hover::before {
+    content: "";
+    display: block;
+    background-color: rgb(150, 0, 180);
+    box-sizing: border-box;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(45deg);
+    top: 15px;
+    left: 15px;
+}

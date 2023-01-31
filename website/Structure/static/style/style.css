@@ -1,0 +1,64 @@
+/* Index */
+
+body#index div {
+    width: 80%;
+    height: 80%;
+    margin: 0px auto;
+    margin-top: 8%;
+    text-align: center;
+    border-radius: 15px;
+    border: solid rgb(150, 0, 180) 2px;
+    box-shadow: 
+        rgba(0, 0, 0, 0.09) 0px 2px 1px, 
+        rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+        rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+body#index div h1#title {
+    margin: 0px;
+    padding: 15px;
+    background-color: rgb(150, 0, 180);
+    color: rgb(255, 255, 255);
+    border-radius: 13px 13px 0px 0px;
+    box-shadow: 
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+        rgba(0, 0, 0, 0.09) 0px 16px 8px;
+}
+
+body#index div form {
+    margin: 5% 0px;
+}
+
+body#index div form ul {
+    padding: 0px;
+    list-style: None;
+}
+
+body#index div form ul li {
+    margin: 20px;
+}
+
+body#index div form ul li button {
+    width: 45%;
+    padding: 15px 0px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(150, 0, 180);
+    border: solid rgb(150, 0, 180) 2px;
+    border-radius: 15px;
+}
+
+body#index div form ul li button:hover {
+    width: 45%;
+    padding: 16px 0px 15px 0px;
+    font-size: 18px;
+    color: rgb(200, 200, 200);
+    background-color: rgb(130, 0, 160);
+    border: solid rgb(150, 0, 180) 2px;
+    border-radius: 15px;
+    box-shadow: 
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
